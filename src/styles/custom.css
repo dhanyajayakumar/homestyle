@@ -1,0 +1,106 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .corner-zoom {
+    position: absolute;
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    background: rgba(255, 255, 255, 0.5);
+    cursor: zoom-in;
+    z-index: 10;
+  }
+  
+  .corner-zoom.top-left {
+    top: 0;
+    left: 0;
+  }
+  
+  .corner-zoom.top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  .corner-zoom.bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .corner-zoom.bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  
+  img.zoomed-top-left {
+    transform: scale(2);
+    transform-origin: top left;
+  }
+  
+  img.zoomed-top-right {
+    transform: scale(2);
+    transform-origin: top right;
+  }
+  
+  img.zoomed-bottom-left {
+    transform: scale(2);
+    transform-origin: bottom left;
+  }
+  
+  img.zoomed-bottom-right {
+    transform: scale(2);
+    transform-origin: bottom right;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: black;
+  }
+
+
+  /* custom.css */
+.zoom {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .zoom img {
+    display: block;
+  }
+  
+  .zoom img:hover {
+    transform: scale(3.2);
+    transition: transform 0.2s;
+  }
+  
+  .zoom-controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .zoom-controls button {
+    background: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .zoom-controls button:hover {
+    transform: scale(1.1);
+  }
+  
+  .zoom-controls svg {
+    width: 24px;
+    height: 24px;
+  }

@@ -1,0 +1,36 @@
+// lib/endpoints.js
+const endpoints = {
+  //endpoints here
+  letRegister: "/api/auth/register",
+  letVerifyOtp: "/api/auth/verify-otp",
+  letResendOTP: "/api/auth/resend-otp",
+  letsLogin: "/api/auth/login",
+  verifyOtp: "/api/auth/verify-otp?=&",
+  forgetPassword: "/api/auth/forgot-password",
+  getMenu: "/api/common/website-setups",
+  getBanners: "/api/common/banner",
+  getCollection: "/api/common/collection-categories",
+  getSliders: "/api/common/slider",
+  fortgetPass: "/api/auth/forgot-password",
+  productListing: "/api/product/product-list",
+  filterProductData: "/api/product/category",
+  filterBrandData: "/api/product/brand",
+  productDetail: "/api/product/product-detail",
+  getSpecification: "/api/product/specification",
+  getWishList: "/api/wishlist",
+  addToWishList: "/api/wishlist/add-to-wishlist",
+  addToCart: "/api/cart/create-cart",
+  getCartData: "/api/cart/get-cart",
+  deletItemCart: "/api/cart/create-cart",
+  getAddressLists: "/api/customer/get-all-address",
+  getPaymentMethodeList: "/api/common/payment-methods",
+  letRemoveAddress: "/api/customer/remove-address/",
+  letAddAddress: "/api/customer/manage-address",
+  getCouponList: "/api/coupons",
+  letsConfirmOrder: "/api/order/checkout",
+  letGetOrderDetails: "/api/order",
+  letGetOrderList: "/api/order/order-list",
+  letgetTabbyData: "/api/order/checkout/retrieve-checkout-tabby",
+};
+
+export default endpoints;
